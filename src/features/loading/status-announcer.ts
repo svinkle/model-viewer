@@ -78,6 +78,7 @@ export class LoadingStatusAnnouncer extends EventDispatcher {
     const {style} = statusElement;
 
     statusElement.setAttribute('role', 'status');
+    statusElement.setAttribute('aria-hidden', 'true');
 
     style.position = 'absolute';
     style.color = 'transparent';
